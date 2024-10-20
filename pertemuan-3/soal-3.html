@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .profile {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        .profile-image {
+            width: 100%;
+            height: auto;
+            border-radius: 50%;
+        }
+        .skills {
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .skills h2 {
+            margin-bottom: 15px;
+        }
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            border-radius: 20px;
+        }
+        .skill-item {
+            background-color: #9e34db;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 3px;
+        }
+        .contact {
+            margin-top: 30px;
+        }
+        .contact h2 {
+            margin-bottom: 15px;
+        }
+        .contact-info {
+            display: flex;
+            justify-content: space-between;
+        }
+        @media (max-width: 768px) {
+            .profile {
+                grid-template-columns: 1fr;
+            }
+            .profile-image {
+                width: 50%;
+                margin: 0 auto;
+            }
+            .contact-info {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>About Me</h1>
+        </header>
+        <main>
+            <section class="profile">
+                <img src="Screenshot 2024-10-14 191026.png" alt="Profile Picture" class="profile-image">
+                <div>
+                    <h2>Alavie Farghanie</h2>
+                    <p>Right now I have interested to be a web developer and this homepage website is my first protofolio after learning html and css.</p>
+                </div>
+            </section>
+            <section class="skills">
+                <h2>Skills</h2>
+                <div class="skills-list">
+                    <span class="skill-item">HTML</span>
+                    <span class="skill-item">CSS</span>
+                    <span class="skill-item">JavaScript</span>
+                </div>
+            </section>
+            <section class="contact">
+                <h2>Contact Me</h2>
+                <div class="contact-info">
+                    <a href="mailto:falavieiftikar@gmail.com">Email : falavieiftikar@gmail.com</a>
+                    <p>Phone: 0883825692</p>
+                    <p>Location: Jakarta</p>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
